@@ -9,11 +9,80 @@
       rel="stylesheet"
     />
     <style type="text/css">
+      .article1.rotate-center {
+        animation: rotate-center1 20s ease-in-out both;
+        animation-iteration-count: infinite;
+      }
+      .article2.rotate-center {
+        animation: rotate-center2 20s ease-in-out both;
+        animation-iteration-count: infinite;
+      }
+      .article3.rotate-center {
+        animation: rotate-center3 20s ease-in-out both;
+        animation-iteration-count: infinite;
+      }
+      @keyframes rotate-center1 {
+        0% {
+          transform: translateX(0);
+        }
+        32% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateX(800px);
+        }
+        99% {
+          transform: translateX(800px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes rotate-center2 {
+        0% {
+          transform: translateX(800px);
+        }
+        32% {
+          transform: translateX(800px);
+        }
+        33% {
+          transform: translateX(0);
+        }
+        65% {
+          transform: translateX(0);
+        }
+        66% {
+          transform: translateX(800px);
+        }
+        100% {
+          transform: translateX(800px);
+        }
+      }
+      @keyframes rotate-center3 {
+        0% {
+          transform: translateX(800px);
+        }
+        65% {
+          transform: translateX(800px);
+        }
+        66% {
+          transform: translateX(0);
+        }
+        99% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(800px);
+        }
+      }
       html {
         background-color: black;
         color: white;
         font-family: "Roboto Condensed", sans-serif;
         color: #444445;
+      }
+      body {
+        margin: 0;
       }
       h2 {
         font-size: 3rem;
@@ -35,13 +104,29 @@
         overflow: hidden;
         text-align: center;
         height: 800px;
+        right: 0;
+        top: 0;
       }
       .right-side {
         width: 55%;
         overflow: hidden;
         text-align: center;
         height: 800px;
+        position: relative;
+      }
+      .article {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .article1 {
         background-color: #e7eda5;
+      }
+      .article2 {
+        background-color: blue;
+      }
+      .article3 {
+        background-color: red;
       }
       .left-side img {
         width: 80%;
@@ -53,8 +138,8 @@
       <div class="left-side">
         <img src="logo.png" />
       </div>
-      <div class="right-side">
-        <article>
+      <div class="right-side slide1 ">
+        <div class="article article1 rotate-center">
           <div
             style="color: #c76752; font-family: 'Press Start 2P', cursive;  padding:80px 0 0; font-size:5em;"
           >
@@ -82,31 +167,113 @@
             <div style="text-align: center;">
               <img
                 src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
-                style="    height:160px;
-    width: 159px;
-    mix-blend-mode: darken;"
+                style="height:160px;width: 159px;mix-blend-mode: darken;"
               />
               <img
                 src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
-                style="    height:160px;
-    width: 160px;
-    mix-blend-mode: darken;"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
               />
               <img
                 src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
-                style="    height:160px;
-    width: 160px;
-    mix-blend-mode: darken;"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
               />
               <img
                 src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
-                style="    height160px;
-    width:159px;
-    mix-blend-mode: darken;"
+                style="height:160px;width:159px;mix-blend-mode: darken;"
               />
             </div>
           </div>
-        </article>
+        </div>
+        <div class="article article2 rotate-center">
+          <div
+            style="color: #c76752; font-family: 'Press Start 2P', cursive;  padding:80px 0 0; font-size:5em;"
+          >
+            Djäkne Barbecue
+          </div>
+          <div>
+            <h2 style="text-align:center; margin-bottom:0; ">
+              Chilling with friends
+            </h2>
+            <p style="text-align:center; margin-top:10px; margin-bottom:0;">
+              September 8, 16:00 at Djäkne
+            </p>
+            <div
+              style="display: flex; flex-direction:row; align-items: center; justify-content: center;  margin-bottom: -50px;"
+            >
+              <img
+                src="https://thumbs.gfycat.com/AmusedRemoteBarebirdbat-max-1mb.gif"
+                style="height: 323px; transform: rotate(345deg);"
+              />
+              <img
+                src="https://thumbs.gfycat.com/AmusedRemoteBarebirdbat-max-1mb.gif"
+                style="height: 323px; transform: rotate(15deg);"
+              />
+            </div>
+            <div style="text-align: center;">
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 159px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width:159px;mix-blend-mode: darken;"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="article article3 rotate-center">
+          <div
+            style="color: #c76752; font-family: 'Press Start 2P', cursive;  padding:80px 0 0; font-size:5em;"
+          >
+            Djäkne Barbecue
+          </div>
+          <div>
+            <h2 style="text-align:center; margin-bottom:0; ">
+              Chilling with friends
+            </h2>
+            <p style="text-align:center; margin-top:10px; margin-bottom:0;">
+              September 8, 16:00 at Djäkne
+            </p>
+            <div
+              style="display: flex; flex-direction:row; align-items: center; justify-content: center;  margin-bottom: -50px;"
+            >
+              <img
+                src="https://thumbs.gfycat.com/AmusedRemoteBarebirdbat-max-1mb.gif"
+                style="height: 323px; transform: rotate(345deg);"
+              />
+              <img
+                src="https://thumbs.gfycat.com/AmusedRemoteBarebirdbat-max-1mb.gif"
+                style="height: 323px; transform: rotate(15deg);"
+              />
+            </div>
+            <div style="text-align: center;">
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 159px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width: 160px;mix-blend-mode: darken;"
+              />
+              <img
+                src="https://c.tenor.com/baki-fxZVt0AAAAC/fire-flame.gif"
+                style="height:160px;width:159px;mix-blend-mode: darken;"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
