@@ -145,15 +145,42 @@
       .article3 {
         background-color: #469e92;
       }
+      .left-side .logo-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
       .left-side img {
-        width: 80%;
+        max-width: 35%;
+        width: auto;
+        height: auto;
+        padding: 16px 5%;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="left-side">
-        <img src="logo.png" />
+        <div
+          style="font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    line-height: 2em;
+    color: white;
+    margin-bottom: 60px;"
+        >
+          Happy to see you here!
+        </div>
+        <div class="logo-container">
+          <img src="unitedrobots.png" />
+          <img src="e-space.png" />
+          <img src="twiik.png" />
+          <img src="riktiga.png" />
+          <img src="studybee.png" />
+          <img src="youcruit.png" />
+          <img style="margin-top:20px;" src="logo.png" />
+        </div>
       </div>
       <div class="right-side ">
         <div class="article article1 rotate-center">
@@ -166,8 +193,10 @@
             <h2 style="text-align:center; margin-bottom:0; ">
               Chilling with friends
             </h2>
-            <p style="text-align:center; margin-top:10px; margin-bottom:0;">
-              September 8, 16:00 at Djäkne
+            <p
+              style="text-align:center; margin-top:10px; margin-bottom:0; font-size:2.6em;"
+            >
+              … and get to know some new ones!
             </p>
             <div
               style="display: flex; flex-direction:row; align-items: center; justify-content: center;  margin-bottom: -50px;"
